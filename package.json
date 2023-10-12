@@ -1,6 +1,7 @@
 {
   "name": "talha-food-app",
   "version": "0.1.0",
+  "homepage": "https://recollectteam.github.io/web",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.1",
@@ -17,6 +18,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -42,7 +45,9 @@
   },
   "description": "![Github Badge](https://img.shields.io/github/stars/jbtalhakhan/react-tailwind-food-app?affiliations=OWNER) ![Forks Badge](https://img.shields.io/github/forks/jbtalhakhan/react-tailwind-food-app) ![Language Badge](https://img.shields.io/github/languages/count/jbtalhakhan/react-tailwind-food-app) ![Javascript Badge](https://img.shields.io/github/languages/top/jbtalhakhan/react-tailwind-food-app)",
   "main": "craco.config.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  },
   "author": "",
   "license": "ISC"
 }
