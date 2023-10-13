@@ -6,7 +6,7 @@ const BottomLead = ({actionText, description, mainActionText, extraActionText, s
       <p className="p-5 text-5xl font-bold leading-normal text-center text-white lg:text-4xl lg:pt-10">{actionText}</p>
       <p className="pl-12 pr-12 text-xl leading-8 text-center text-gray-300 lg:text-gray-200 lg:font-medium">{description}</p>
       <div className="flex flex-col flex-wrap items-center justify-center w-full h-48 pt-5 lg:flex-row lg:pt-1">
-        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxD3jSTgyB5jFvC9COHpacrStAOcAiPhSOikoQemAjWjGsOg/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button
             style={{
               paddingTop: '0.75rem',   // Equivalent to pt-3

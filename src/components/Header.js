@@ -35,7 +35,7 @@ const Header = ({appName, tagLine, description, mainActionText, extraActionText,
           </p>
         </div>
         <div className="relative z-50 flex flex-col items-center justify-between h-48 lg:space-x-8 pt-7 lg:pt-0 lg:flex-row lg:justify-between lg:w-90">
-         <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxD3jSTgyB5jFvC9COHpacrStAOcAiPhSOikoQemAjWjGsOg/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">
             <button
               style={{
                 paddingTop: '0.75rem',   // Equivalent to pt-3
@@ -80,39 +80,43 @@ const Header = ({appName, tagLine, description, mainActionText, extraActionText,
       <div style={{ 
         position: 'relative', 
         display: 'flex', 
+        flexWrap:"flex",
         flexDirection: 'row', 
         alignItems: 'flex-end', 
         justifyContent: 'center', 
         width: '100vw', 
-        height: '80vh', 
+        height: '40vw', 
         paddingTop: 0, 
         paddingBottom: "3vh",
         marginBottom: 20, 
       }}>
           <img 
             style={{
-              position:"absolute", 
+              position:"relative", 
               marginLeft: "-50vw", 
               marginTop: "-1vh",
-              height: "78vh",
+              // height: "78vh",
+              width: "21vw"
             }}
             src={Overview1} 
             alt=""/>
            <img 
             style={{
-              position:"absolute", 
+              position:"relative", 
               marginTop:"-3vh",
-              height: "82vh", 
+              // height: "82vh",
+              width: "22vw", 
               zIndex: 10
             }}
             src={Overview2} 
             alt=""/>
           <img 
             style={{
-              position:"absolute", 
+              position:"relative", 
               marginRight: "-50vw", 
               marginTop:"-1vh",
-              height: "78vh"
+              //height: "78vh"
+              width: "21vw"
             }}
             src={Overview3} 
             alt=""/>

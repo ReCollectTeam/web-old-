@@ -95,7 +95,7 @@ function App() {
           img={data.step3.img}
           alternate={data.step3.alternate}
           />
-          <div style={{height: 150}}/>
+          <div style={{height: "5vw"}}/>
           
           <BottomLead 
             actionText={data.bottomLead.actionText}
