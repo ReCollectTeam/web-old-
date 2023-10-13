@@ -13,7 +13,7 @@ const BottomLead = ({actionText, description, mainActionText, extraActionText, s
               paddingBottom: '0.75rem',  // Equivalent to pb-3
               paddingLeft: '2rem',      // Equivalent to pl-8
               paddingRight: '2rem',     // Equivalent to pr-8
-              marginTop: '0.75rem',     // Equivalent to mt-3
+              marginTop: '0',     // Equivalent to mt-3
               fontSize: '1.5rem',      // Equivalent to text-2xl
               fontWeight: '600',       // Equivalent to font-semibold
               textAlign: 'center',     // Equivalent to text-center
@@ -21,11 +21,11 @@ const BottomLead = ({actionText, description, mainActionText, extraActionText, s
               transition: 'all',
               backgroundColor: '#8EBADA',  // Equivalent to bg-orange-600
               boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', // Equivalent to shadow-2xl
-              marginTop: '0',          // Equivalent to lg:mt-0
               borderRadius: '1rem',    // Equivalent to rounded-xl
               outline: 'none',        // Equivalent to focus:outline-none
               borderWidth: '2px',     // Equivalent to ring-2
               borderColor: '#8EBADA', // Equivalent to ring-orange-600
+              marginBottom: 10,
             }}
           >
             {signupText}
@@ -38,7 +38,7 @@ const BottomLead = ({actionText, description, mainActionText, extraActionText, s
               paddingBottom: '0.75rem',  // Equivalent to pb-3
               paddingLeft: '2rem',      // Equivalent to pl-8
               paddingRight: '2rem',     // Equivalent to pr-8
-              marginTop: '2rem',        // Equivalent to mt-8
+              marginTop: '0',        // Equivalent to mt-8
               fontSize: '1.5rem',      // Equivalent to text-2xl
               fontWeight: '600',       // Equivalent to font-semibold
               textAlign: 'center',     // Equivalent to text-center
@@ -46,7 +46,6 @@ const BottomLead = ({actionText, description, mainActionText, extraActionText, s
               transition: 'all',
               boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', // Equivalent to shadow-2xl
               marginLeft: '1.25rem',   // Equivalent to lg:ml-5
-              marginTop: '0',          // Equivalent to lg:mt-0
               borderRadius: '1rem',    // Equivalent to rounded-xl
               hover: {
                 color: '#FFA500',     // Equivalent to hover:text-orange-500
@@ -55,6 +54,7 @@ const BottomLead = ({actionText, description, mainActionText, extraActionText, s
               outline: 'none',        // Equivalent to focus:outline-none
               borderWidth: '2px',     // Equivalent to ring-2
               borderColor: '#D3D3D3', // Equivalent to ring-gray-300
+              marginBottom: 10,
             }}
           >
             {secondaryText}

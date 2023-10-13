@@ -10,7 +10,7 @@ import Overview3 from "../assets/Overview3.png";
 const Header = ({appName, tagLine, description, mainActionText, extraActionText, signupText}) => {
   return (
     <div id="product" >
-      <div style={{textShadow:'0px 1px 1px gray', height:"75vh"}} className="flex flex-col items-center justify-start font-sans min-h-96 bg-gray-50 lg:pt-10 lg:pb-20 lg:bg-hero lg:bg-cover">
+      <div style={{textShadow:'0px 1px 1px gray', height:"75vh",}} className="flex flex-col items-center justify-start font-sans min-h-96 bg-gray-50 lg:pt-10 lg:pb-20 lg:bg-hero lg:bg-cover">
         <div>
           <p
             style={{
@@ -42,7 +42,7 @@ const Header = ({appName, tagLine, description, mainActionText, extraActionText,
                 paddingBottom: '0.75rem',  // Equivalent to pb-3
                 paddingLeft: '2rem',      // Equivalent to pl-8
                 paddingRight: '2rem',     // Equivalent to pr-8
-                marginTop: '0.75rem',     // Equivalent to mt-3
+                marginTop: '0',     // Equivalent to mt-3
                 fontSize: '1.5rem',      // Equivalent to text-2xl
                 fontWeight: '600',       // Equivalent to font-semibold
                 textAlign: 'center',     // Equivalent to text-center
@@ -50,7 +50,6 @@ const Header = ({appName, tagLine, description, mainActionText, extraActionText,
                 transition: 'all',
                 backgroundColor: '#8EBADA',  // Equivalent to bg-orange-600
                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', // Equivalent to shadow-2xl
-                marginTop: '0',          // Equivalent to lg:mt-0
                 borderRadius: '1rem',    // Equivalent to rounded-xl
                 outline: 'none',        // Equivalent to focus:outline-none
                 borderWidth: '2px',     // Equivalent to ring-2
@@ -82,30 +81,28 @@ const Header = ({appName, tagLine, description, mainActionText, extraActionText,
         position: 'relative', 
         display: 'flex', 
         flexDirection: 'row', 
-        alignItems: 'flex-start', 
+        alignItems: 'flex-end', 
         justifyContent: 'center', 
         width: '100vw', 
-        height: '100vh', 
-        paddingTop: '20px', 
-        marginBottom: '-16px', 
-        backgroundColor: '#fff', 
-        marginBottom: '20px', 
-        width: '100%', 
         height: '80vh', 
-        paddingTop: '0'
+        paddingTop: 0, 
+        paddingBottom: "3vh",
+        marginBottom: 20, 
       }}>
           <img 
             style={{
               position:"absolute", 
-              marginLeft: -650, 
-              marginTop:15
+              marginLeft: "-50vw", 
+              marginTop: "-1vh",
+              height: "78vh",
             }}
             src={Overview1} 
             alt=""/>
            <img 
             style={{
               position:"absolute", 
-              marginTop:-27, 
+              marginTop:"-3vh",
+              height: "82vh", 
               zIndex: 10
             }}
             src={Overview2} 
@@ -113,8 +110,9 @@ const Header = ({appName, tagLine, description, mainActionText, extraActionText,
           <img 
             style={{
               position:"absolute", 
-              marginRight: -650, 
-              marginTop:15
+              marginRight: "-50vw", 
+              marginTop:"-1vh",
+              height: "78vh"
             }}
             src={Overview3} 
             alt=""/>
