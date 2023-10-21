@@ -16,41 +16,41 @@ function App() {
   const data = {
     hero:{
       appName: 'ReCollect',
-      tagLine: "Capture the digital universe, make your world the ultimate content canvas.",
-      description: 'Join the invite list now',
+      tagLine: "Imagine a single, streamlined solution to organize and access all your bookmarks effortlessly",
+      description: 'Sign up for the invite list now',
       mainActionText: 'Playstore',
       extraActionText: 'App Store',
       signupText: "Sign Up"
     },
     step1: {
-      title: 'Create an account',
-      heading: 'Create collections',
-      description: 'An account is created with your email and a desired password',
+      title: 'You Are What You Collect',
+      heading: 'Curate Collections',
+      description: 'Turn everyday moments into extraordinary inspiration. Save your favorite finds from social media in personalized collections.',
       img: Rectangle_3,
       alternate: false,
     },
     step2: {
-      title: 'Explore while shopping',
-      heading: 'Collaborate on collections',
-      description: 'Shop for your favorite meals or drinks and enjoy while doing it.',
+      title: 'Do It With Friends',
+      heading: 'Collaborate Seamlessly',
+      description: "Girl's trip? Food adventure? Or simply just collecting memes? We got you! Collaborate with your friends and collectively shape your vision.",
       img: Rectangle_4,
       alternate: true,
     },
     step3: {
-      title: 'Checkout',
-      heading: "Save images from other Collections",
-      description: "Discover the collections other people are creating and add photos to your album.",
+      title: 'Get Inspired',
+      heading: "Discover More",
+      description: "Check out what's trending in collections from the community and snag some inspo for your own album.",
       img: Rectangle_5,
       alternate: false,
     },
     bottomLead: {
-      actionText: 'Download',
+      actionText: 'Join the Journey',
       // description: 'Available on your favourite store. Start your premium experience now.',
-      description: "Sign up to be a UX research participant",
+      description: "Got an awesome idea or want to help us build a great app? We'd love to hear from you. Sign up to become a UX research participant or share your feedback with us!",
       mainActionText: 'Playstore',
       extraActionText: 'App Store',
-      signupText: "Sign Up",
-      secondaryText: "Feedback"
+      signupText: "Join Research",
+      secondaryText: "Share Ideas"
     },
   }
   return (

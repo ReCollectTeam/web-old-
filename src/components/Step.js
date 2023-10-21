@@ -6,21 +6,24 @@ const Step = ({title, heading, description, img, alternate}) => {
 
     return (
         <div className={alternate?row : rowReverse} 
-        style={{flex:1, display:"flex", flexWrap:"flex", marginTop: 30, height:450, paddingHorizontal: 50, justifyContent:"center"}}>
+        style={{flex:1, display:"flex", flexWrap:"flex", marginTop: 30, height:450, paddingHorizontal: 50, justifyContent:"center", alignItems:"center"}}>
+          <div style={{width:"60%", display:"flex", flexWrap:"flex", flexDirection:alternate?"row":"row-reverse",justifyContent:"space-between", alignItems:"center"}}>
+            
           <div style={{ 
-            width: 500,  // Equivalent to lg:w-2/6
-            paddingRight:20,  // Equivalent to lg:-ml-20
-            paddingLeft: 20,
-            marginTop: '-10px',  // Equivalent to lg:-mt-10
+            width: "40%",  // Equivalent to lg:w-2/6
+            marginTop: '-2vw',  // Equivalent to lg:-mt-10
             marginBottom: 10,
             display: 'flex',
             flexDirection: 'column',  // Equivalent to lg:flex lg:flex-col
             justifyContent: 'flex-start',  // Equivalent to lg:justify-center lg:items-start
+            paddingRight: alternate?10:0,
+            paddingLeft: alternate?0:10,
+            //backgroundColor:"blue"
           }}>
            <p
             style={{
-              paddingBottom: '1.25rem',  // Equivalent to pb-5
-              fontSize: '1.25rem',       // Equivalent to text-2xl
+              paddingBottom: '1rem',  // Equivalent to pb-5
+              fontSize: '1.25em',       // Equivalent to text-2xl
               fontWeight: '600',        // Equivalent to font-semibold
               textAlign: 'left',     // Equivalent to text-center
               color: '#8EBADA',         // Equivalent to text-orange-400
@@ -30,23 +33,23 @@ const Step = ({title, heading, description, img, alternate}) => {
             {title}
           </p>
           <p
-            style={{
-              marginBottom: "1vh",
-              fontSize: '2.5rem', // Equivalent to "text-4xl"
+            style={{              
+              fontSize: '2.2em', // Equivalent to "text-4xl"
               fontWeight: '600', // Equivalent to "font-semibold"
               lineHeight: '2.5rem', // Equivalent to "leading-relaxed"
               textAlign: "left", // Equivalent to "text-center"
               color: '#000', // Equivalent to "text-blue-800"
               marginTop: '-0.75rem', // Equivalent to "mb-3" (negative margin)
+              marginBottom: "3vh",
             }}
           >
             {heading}
           </p>
           <p
             style={{
-              fontSize: '1.5rem', // Equivalent to "text-2xl"
-              fontWeight: '600', // Equivalent to "font-semibold"
-              lineHeight: '2rem', // Equivalent to "leading-10"
+              fontSize: '1.25em', // Equivalent to "text-2xl"
+              fontWeight: '400', // Equivalent to "font-semibold"
+              lineHeight: '1.5rem', // Equivalent to "leading-10"
               textAlign: 'left', // Equivalent to "text-center"
               color: '#555555', // Equivalent to "text-gray-400"
               marginBottom: "2vw"
@@ -55,7 +58,7 @@ const Step = ({title, heading, description, img, alternate}) => {
             {description}
           </p>
           </div>
-          <div style={{ paddingLeft: alternate?"2vw":0, paddingRight: alternate?0:"2vw"}} >
+          <div>
               <img
                 style={{
                   width: 300,
@@ -65,6 +68,7 @@ const Step = ({title, heading, description, img, alternate}) => {
                 src={img}
                 alt=""
               />
+          </div>
           </div>
         </div>
     )
